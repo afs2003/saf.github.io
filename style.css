@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    /* line-height: 1.7; */
+    scroll-behavior: smooth;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    color: #373f41;
+}
+header{
+    padding:  1em 10.6rem ;
+    background-color: #f3f6fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+header .logo{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #5376ba;
+}
+nav a{
+    padding: 20px;
+    color: #373f41;
+    font-weight: 400;
+    font-size: 1rem;
+}
+nav a:hover{
+    color: #5376ba;
+}
+header label{
+    font-size: 1.2em;
+    visibility: hidden;
+    opacity: 0;
+}
+header input{
+    display: none;
+}
+
+/* beranda  */
+.beranda{
+    background-color: #f3f6fa;
+    display: flex;
+    padding:  1em 10.6rem ;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #f3f6fa;
+    min-height: 100vh;
+    gap: 1.1em;
+}
+.beranda .beranda-content h2{
+    font-size: 3rem;
+}
+.beranda .beranda-content h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #5376ba;
+}
+.beranda .beranda-content p{
+    color: #939a9c;
+    font-size: 1.1rem;
+    padding: 2em 0em 4em;
+}
+.beranda img{
+    background-color: #5376ba;
+    border-radius: 100%;
+    width: 100%;
+    max-width: 300px;
+}
+
+.beranda-content button{
+    padding: .5rem 3rem;
+    background-color: #5376ba;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* tentang saya  */
+.TentangSaya{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding:  1em 10.6rem ;
+    text-align: center;
+}
+.TentangSaya h2{
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+.TentangSaya p{
+    padding-top: 2em;
+    font-size: 1.1em;
+    color: #939a9c;
+}
+
+
+/* galeri  */
+.galeri{
+    padding:  1em 10.6rem;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.galeri h2{
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 500;
+    padding: 3em 0 2em 0;
+}
+.galeri .container-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 3em;
+    margin: 0 auto;
+    /* max-width: 600px; */
+    align-items: center;
+    justify-content: center;
+}
+.galeri .container-box img{
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1em;
+    transition: all .4s ease-in-out;
+    box-shadow: 1px 10px 10px -9px #000;
+}
+.container-box img:hover{
+    transform: scale(1.1);
+}
+
+
+/* kontak */
+
+
+
+.kontak{
+    padding:  1em 10.6rem ;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.kontak h2{
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 2em 0 1em 0;
+}
+.kontak form{
+    width: 100%;
+}
+.kontak form .kontakbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.kontak form .box{
+    width: 49%;
+    margin-bottom: 1em;
+    /* background-color: rebeccapurple; */
+}
+.kontak form .box1{
+    width: 100%;
+    margin-bottom: 1em;
+}
+.kontak form .kontakbox label{
+    padding: .5em 0;
+    color: #373f41;
+    display: block;
+}
+.kontak form .kontakbox input,
+.kontak form .kontakbox textarea{
+    border-radius: .2em;
+    border: 1px solid #373f41;
+    width: 100%;
+    background-color: #f3f6fa;
+    padding: 1em;
+    resize: none;
+}
+.kontak form .btn{
+    padding: .5rem 3rem;
+    background-color: #5376ba;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+footer{
+    background-color: #373f41;
+    color: #939a9c;
+    text-align: center;
+    padding: 2em;
+    font-size: .8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet  */
+@media(max-width:900px ){
+    header{
+        padding: 1em 2em;
+    }
+    .galeri{
+        padding: 1em 2em;
+    }
+    .beranda{
+        padding: 1em 2em;
+    }
+    .TentangSaya{
+        padding: 1em 2em;
+    }
+    .kontak{
+        padding:  1em 2rem ;
+    }
+    .kontak form .box{
+        width: 100%;
+        margin-bottom: 1em;
+        /* background-color: rebeccapurple; */
+    }
+}
+
+
+
+/* mobile   */
+@media(max-width:700px){
+    header{
+        padding:  1em 2em ;
+    }
+    nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f3f6fa;
+        width: 100%;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: all .1s ease-in-out;
+    }
+    nav a{
+        padding: 1em 2em;
+        display: block;
+        margin-bottom: .2em;
+    }
+    nav a:hover{
+        background-color: #e0e5ee;
+    }
+    header label{
+        opacity: 1;
+        visibility: visible;
+        
+    }
+    header input:checked ~ nav{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    header input:checked~label::before{
+        content: "\f00d";
+    }
+
+
+    .beranda{
+        text-align: center;
+        padding:  7em 2em 2em ;
+        flex-direction: column-reverse;
+    }
+    .beranda .beranda-content h2{
+        font-size: 2rem;
+    }
+    .beranda .beranda-content h3{
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: #5376ba;
+    }
+    .beranda .beranda-content p{
+        padding: 2rem 0rem 2rem;
+        font-size: 1rem;
+    }
+    .TentangSaya{
+        padding:  1em 2rem ;
+    }
+    .TentangSaya h2{
+        font-size: 2em;
+    }
+    .TentangSaya p{
+        font-size: 1em;
+    }
+    .beranda-content button,
+    .kontak form .btn{
+        font-size: .8em;
+    }
+}
